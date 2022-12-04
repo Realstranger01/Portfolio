@@ -1,0 +1,60 @@
+*
+body {
+  font-family: 'Poppins' , sans-serif;
+  
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+
+#navbar h1{
+  width: 25%;
+  font-weight: 500;
+}
+
+#navigation{
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#navigation p {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.highlight {
+  color: green;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 60px;
+  margin: 0px 0px;
+  color: green;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0px 0px;
+}
+
+h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
