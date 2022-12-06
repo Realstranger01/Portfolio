@@ -6,43 +6,116 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portfolio // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./Assets/style.css">
 </head>
 
 <body>
   <!-- main logo / nav -->
-<header>
-   <nav id="navbar"></nav>
-    <h1>My Portfolio</h1>
-    <nav id="navigation"></nav>
-    <p class="highlight">Hamza's Portfolio</p>
-    <p>About Me</p>
-    <p>Work</p>
-    <p>Resume</p>
-    <p>Contact Me</p>
+
+  <header>
+    <!--The header element can be ragraded as a container hence why it can not be placed within a footer or another header element so that's why i removed the class and left it as normal.-->
+    <h1 id="home">Hamza Osman</h1>
+    <nav>
+      <!--the nav element defines navigation links so that's why i replaced it with the div elements so the web page aligns with the accessbility standards set by the html semantic elements.-->
+
+
+      <a href="#">About Me</a>
+
+
+      <a href="#">Work</a>
+
+
+      <a href="#">Resume</a>
+
+
+      <a href="#">Contact Me</a>
+
+
+    </nav>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
-      <h2>Cool subtitle here!</h2>
+      <h2>My Portfolio</h2>
     </div>
   </section>
 
   <main class="page-wrapper">
     <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
+    <section class="page-section" id="aboutheading">
+      <h2 class="title">About Me</h2>
+      <div class="detail" id="aboutDetail">
+        <img id="profile-pic" src="../Portfolio/Assets/images/Image.jpeg">
+        <p class="about-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias modi laudantium maxime velit repellat maiores at, obcaecati non voluptate harum. Iusto iure adipisci ducimus eaque voluptatem voluptas voluptatum non obcaecati?</p>
+        <br>
+        <p class="about-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias modi laudantium maxime velit repellat maiores at, obcaecati non voluptate harum. Iusto iure adipisci ducimus eaque voluptatem voluptas voluptatum non obcaecati?
+        </p>
+      </div>
     </section>
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
+    <!-- portfolio container -->  
+    </section>
+    <section class="page-section" >
+      <h2 class="title">Work</h2>
+      <div class="detail" id="categoryGrid">
+        <div id="surfreport" class="categoryGridArea">
+          <a class="link" target="_blank" href="https://realstranger01.github.io/Horiseon/"></a>
+          <div  class="heading">
+           
+              <a target="_blank" href="https://realstranger01.github.io/Horiseon/" class="projectLink">Horiseon Marketing Agency</a>
+              <p class="additionalInfo">Horiseon</p>
+           
+            
+          </div>
+        </div>
+        <div id="ledwall" class="categoryGridArea">
+          <a class="link" target="_blank" href="https://realstranger01.github.io/prework-study-guide/"></a>
+          <div class="heading">
+            <a target="_blank" href="https://realstranger01.github.io/prework-study-guide/" class="projectLink">Study Guide</a>
+            <p class="additionalInfo">Basic HTML Structure</p>
+          </div>
+        </div>
+        <div id="calculator" class="categoryGridArea">
+          <a class="link" target="_blank" href="#"></a>
+          <div class="heading">
+          
+              <a target="_blank" href="#" class="projectLink">Calculator</a>
+              <p class="additionalInfo">Lorem ipsum dolor</p>
+            
+          </div>
+        </div>
+        <div id="pastelPuzzles" class="categoryGridArea">
+          <a class="link" target="_blank" href="#"></a>
+          <div class="heading">
+            <a target="_blank" href="#" class="projectLink">Pastel Puzzels</a>
+            <p class="additionalInfo">Lorem ipsum dolor</p>
+          </div>
+        </div>
+        <div id="runBuddy" class="categoryGridArea">
+          <a class="link" target="_blank" href="#"></a>
+          <div class="heading">
+            <a target="_blank" href="#" class="projectLink">Run Buddy</a>
+            <p class="additionalInfo">Lorem ipsum dolor</p>
+          </div>
+        </div>
+      </div>
+      
     </section>
 
+
+    
     <!-- contact -->
+
     <section class="page-section contact" id="contact">
       <h2>Contact Me</h2>
+      <div class="detail" id="contactDetail">
+        <h5 id="phoneNumber"><a href="#">555.555.555</a></h5>
+        <h5 id="emailAddress"><a href="mailto:hosman_278@hotmail.com">hosman_278@hotmail.com</a></h5>
+        <h5 id="github"><a target="_blank" href="https://github.com/Realstranger01">GitHub</a></h5>
+        <h5 id="twitter"><a target="_blank" href="https://twitter.com/dodzi_">Twitter</a></h5>
+        <h5 id="spotify"><a target="_blank" href="https://open.spotify.com/">Spotify</a></h5>
+      </div>
     </section>
   </main>
 </body>
