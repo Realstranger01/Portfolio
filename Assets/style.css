@@ -45,7 +45,7 @@ header  {
 
 }
 header h2 { 
-  background-color: #91CCCD;
+  background-color: blueviolet;
   color: black;
   padding: 2.5px 10px 2.5px 50px;
 }
@@ -90,27 +90,27 @@ p {
 }
 
 .title {
-  color: navy;
+  color: blueviolet;
   font-size: 30px;
   grid-area: title;
   word-wrap: break-word;
   text-align: right;
   justify-content: right;
   padding: 7px;
-  border-right: 4px solid #4d607d;
+  border-right: 4px solid blueviolet;
 }
 
 a {
   text-decoration: none;
   padding: 2px 10px 2px 10px;
   margin: 5px;
-  border-bottom: 4px solid navy;
+  border-bottom: 4px solid blueviolet;
 }
 
 
 .detail {
   grid-area: detail;
-  color: navy
+  color: blueviolet;
   
 }
 
@@ -145,7 +145,7 @@ a {
   cursor: pointer;
   display: grid;
   align-content: end;
-  border: 5px solid navy;
+  border: 5px solid blueviolet;
 
 }
 
@@ -172,7 +172,7 @@ a {
   padding: 0px;
   font-size: 16px;
   font-weight: 600;
-  color: red;
+  color: blueviolet;
 }
 
 .additionalInfo {
@@ -182,7 +182,7 @@ a {
 
 
 .projectLink:visited {
-  color: red;
+  color: blueviolet;
 }
 
 #categoryGrid {
