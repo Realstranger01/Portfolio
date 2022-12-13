@@ -1,7 +1,7 @@
 # MY Portfolio
 
 <h1 align="center">
-  <img src=![My Portfolio](./Assets/images/rs-portfolio-logo.png) "My Portfolio") alt="RS Portfolio" width="450"></a>
+  <img src=![My Portfolio](./Assets/images/rs-portfolio-logo.png) "My Portfolio") alt="RS Portfolio" width="450">
 </h1>
 
 <h3 align="center">Welcome To My Portfolio</h3>
