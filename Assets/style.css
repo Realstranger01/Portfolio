@@ -1,236 +1,532 @@
-*
-{
-  box-sizing: border-box;
-}
-body {
-  background-color: gray;
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.5;
-  
-}
+ * {
+   box-sizing: border-box;
+ }
 
-/* Nav CSS*/
-nav h1 {
-  display: flex;
-  flex-direction: row;
-  margin: 0px 5%;
-  color: #000;
-  min-width: 300px;
-}
-nav a {
-  padding: 5px 10px;
-  color: black
-
-}
-header h1 {
-  width: 25%;
-  font-weight: 500;
-}
-
-header  {
-  display: flex;
-  flex-direction: row;
-  padding: 20px 6% 20px 0;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-
-  grid-template-columns: auto auto;
-  grid-template-rows: 1fr;
-  grid-template-areas: 
-  "nav h1";
-  
-
-}
-header h2 { 
-  background-color: blueviolet;
-  color: black;
-  padding: 2.5px 10px 2.5px 50px;
-}
-
-.hero-banner div h2{
-  background-color: gray;
-  color: black;
-  padding: 5px 10px;
-  margin: 15px;
-  position: a;
-  float: right;
-}
-.hero-banner{
-  background-image: url(../Assets/images/02-hero-bg.jpg);
-  object-fit: fill;
-  height: 250px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-.page-wrapper, .hero-banner div {
-  width: 70%;
-  margin: 0px auto;
-}
-.page-section {
-  margin: 20px 10px 10px 10px;
-  display: grid;
-  column-gap: 20px;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 3fr;
-  grid-template-areas:
-    "title detail";
-}
-
-.title {
-  color: blueviolet;
-  font-size: 30px;
-  grid-area: title;
-  word-wrap: break-word;
-  text-align: right;
-  justify-content: right;
-  padding: 7px;
-  border-right: 4px solid blueviolet;
-}
-
-a {
-  text-decoration: none;
-  padding: 2px 10px 2px 10px;
-  margin: 5px;
-  border-bottom: 4px solid blueviolet;
-}
+ body {
+   background-color: black;
+   margin: 0;
+   padding: 0;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   line-height: 1.5;
 
 
-.detail {
-  grid-area: detail;
-  color: blueviolet;
-  
-}
-
-#profile-pic {
-  object-fit: contain;
-  display: inline;
-  width: 150px;
-  float: left;
-  margin: 0px 10px 0px 0px;
-}
-
-.about-text {
-  clear: right;
-  font-size: 15px;
-}
-
-.detail h5 {
-  display: inline;
-  font-size: 20px;
-  vertical-align: middle;
-  text-align: center;
-}
-
-/* grid css*/
+ }
 
 
-.categoryGridarea{
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 5px;
-  cursor: pointer;
-  display: grid;
-  align-content: end;
-  border: 5px solid blueviolet;
-
-}
-
-.heading{
-  background-color:black;
-  padding: 5px;
-  color: gray;
-  display: inline;
-  float: left;
-  margin-right: auto;
-  margin-bottom: 12px;
-}
-.link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
-}
-
-.projectLink {
-  margin: 0px;
-  padding: 0px;
-  font-size: 16px;
-  font-weight: 600;
-  color: blueviolet;
-}
-
-.additionalInfo {
-  font-size: 12px;
-}
+ /* Nav CSS*/
+ nav h1 {
+   display: flex;
+   flex-direction: row;
+   margin: 15px 15%;
+   color: black;
+   min-width: 300px;
+   padding: 5px 10px;
+   font-size: large;
+ }
 
 
 
-.projectLink:visited {
-  color: blueviolet;
-}
 
-#categoryGrid {
-  display: grid;
-  grid-template-rows: 300px 120px 120px;
-  grid-template-columns: 50% 50%;
-  grid-template-areas:
-  "surfreport surfreport"
-  "ledwall calculator"
-  "pastelpuzzles runbuddy";
-  
 
-  
-}
+ header h1 {
+   width: 50%;
+   font-weight: 500;
+   color: burlywood;
+ }
 
-#surfreport {
-  position: relative;
-  grid-area: surfreport;
-  background-image: url(https://realstranger01.github.io/Horiseon/);
-  
-}
+ header {
+   display: flex;
+   flex-direction: row;
+   padding: 20px 6% 20px 0;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   grid-template-columns: auto auto;
+   grid-template-rows: 1fr;
+   grid-template-areas:
+     "home navlinks"
 
-#ledwall {
-  position: relative;
-  grid-area: ledwall;
-  background-image: url(../Assets/images/02-portfolio-1.jpg);
-  
-}
 
-#calculator {
-  position: relative;
-  grid-area: calculator;
-  background-image: url(../Assets/images/02-portfolio-2.jpg);
-  
-}
+ }
 
-#pastelpuzzles{
-  position: relative;
-  grid-area: pastelpuzzles;
-  background-image: url(../Assets/images/02-portfolio-3.jpg);
-  
-}
 
-#runbuddy {
-  position: relative;
-  grid-area: runbuddy;
-  background-image: url(../Assets/images/02-run-buddy.jpg);
-  
+ header h2 {
+   background-color: black;
+   color: black;
+   padding: 2.5px 10px 2.5px 50px;
+ }
 
-}
+ .hero-banner div h2 {
+   color: burlywood;
+   padding: 5px 10px;
+   margin: 15px;
+   position: a;
+   float: left;
+ }
 
+ .hero-banner {
+   background-image: url(../Assets/images/02-hero-bg.jpg);
+   object-fit: fill;
+   height: 200px;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   margin: 0;
+ }
+
+ p {
+   margin: 0;
+ }
+
+ .page-wrapper,
+ .hero-banner div {
+   width: 70%;
+   margin: 0px auto;
+ }
+
+ .page-section {
+   margin: 20px 10px 10px 10px;
+   display: grid;
+   column-gap: 20px;
+   grid-template-rows: 1fr;
+   grid-template-columns: 1fr 3fr;
+   grid-template-areas:
+     "title detail";
+ }
+
+ .title {
+   color: burlywood;
+   font-size: 40px;
+   grid-area: title;
+   word-wrap: break-word;
+   text-align: right;
+   justify-content: right;
+   padding: 7px;
+   border-right: 4px solid burlywood;
+ }
+
+ a {
+   text-decoration: burlywood;
+   padding: 4px 20px 4px 20px;
+   margin: 5px;
+   border-bottom: 5px solid black;
+   color: burlywood;
+ }
+
+
+ .detail {
+   grid-area: detail;
+   color: burlywood;
+
+ }
+
+ #profile-pic {
+   object-fit: contain;
+   display: inline;
+   width: 150px;
+   float: left;
+   margin: 0px 10px 0px 0px;
+ }
+
+ .about-text {
+   clear: right;
+   font-size: 15px;
+ }
+
+ .detail h5 {
+   display: inline;
+   font-size: 20px;
+   vertical-align: middle;
+   text-align: center;
+ }
+
+ /* grid css*/
+
+
+ .categoryGridarea {
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin: 5px;
+   cursor: pointer;
+   display: block;
+   align-content: end;
+   border: 5px solid burlywood;
+
+ }
+
+ .heading {
+   background-color: black;
+   padding: 5px;
+   color: gray;
+   display: block;
+   float: left;
+   margin-right: auto;
+   margin-bottom: 12px;
+ }
+
+ .link {
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 100;
+ }
+
+ .projectLink {
+   margin: 0px;
+   padding: 0px;
+   font-size: 16px;
+   font-weight: 600;
+   color: burlywood;
+ }
+
+ .additionalInfo {
+   font-size: 12px;
+ }
+
+
+
+ .projectLink:visited {
+   color: burlywood;
+ }
+
+ #categoryGrid {
+   display: grid;
+   grid-template-rows: 300px 170px 170px;
+   grid-template-columns: 50% 50%;
+   grid-template-areas:
+     "surfreport surfreport"
+     "ledwall calculator"
+     "pastelpuzzles pastelpuzzles"
+     "runbuddy runbuddy";
+
+
+
+ }
+
+ #surfreport {
+   position: relative;
+   grid-area: surfreport;
+   background-image: url(../Assets/images/screenshot.png);
+   
+
+ }
+
+ #ledwall {
+   position: relative;
+   grid-area: ledwall;
+   background-image: url(../Assets/images/02-portfolio-1.jpg);
+
+ }
+
+ #calculator {
+   position: relative;
+   grid-area: calculator;
+   background-image: url(../Assets/images/02-portfolio-2.jpg);
+
+ }
+
+ #pastelpuzzles {
+   position: relative;
+   grid-area: pastelpuzzles;
+   background-image: url(../Assets/images/02-portfolio-3.jpg)
+ }
+
+ #runbuddy {
+   position: relative;
+   grid-area: runbuddy;
+   background-image: url(../Assets/images/02-run-buddy.jpg);
+
+
+ }
+
+ #contactDetail a {
+
+   text-decoration: none;
+   padding: 2px 10px 2px 10px;
+   margin: 5px;
+   border-bottom: 4px rgb(230, 176, 105);
+   color: burlywood;
+ }
+
+ /* for small devices */
+ @media only screen and (max-width: 600px) {
+
+   .page-wrapper,
+   .hero-banner div {
+     width: 90%;
+   }
+
+
+
+   header {
+     display: grid;
+     justify-content: space-between;
+     align-items: center;
+     background-color: burlywood;
+     color: burlywood;
+
+     text-align: center;
+     grid-template-columns: 100%;
+     grid-template-rows: auto;
+     grid-template-areas:
+       "home"
+       "navLinks"
+   }
+
+
+
+   .page-section {
+     margin: 20px 10px 10px 10px;
+     display: grid;
+     column-gap: 20px;
+     grid-template-rows: auto 3fr;
+     grid-template-columns: 1fr;
+     grid-template-areas:
+       "title"
+       "detail";
+   }
+
+   .title {
+
+     border-bottom: 6px solid burlywood;
+     border-right: 0px;
+     margin-bottom: 7px;
+
+     font-size: 42px;
+     text-align: left;
+     justify-content: center;
+     padding: 7px 0px 2px 2px;
+
+   }
+
+   #workDetail {
+     display: grid;
+     grid-template-rows: 300px 120px 120px 120px 120px;
+     grid-template-columns: 1fr;
+     grid-template-areas:
+       "topRow"
+       "centerRowLeft"
+       "centerRowRight"
+       "bottomRowLeft"
+       "bottomRowRight"
+   }
+
+
+   #contactDetail {
+
+     display: grid;
+     justify-content: space-between;
+     margin-top: 0px;
+     grid-template-rows: auto auto auto auto auto;
+     grid-template-columns: 1fr;
+     grid-template-areas:
+       "phoneNumber"
+       "emailAddress"
+       "gitHub"
+       "LinkedIn"
+       "spotify"
+   }
+
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+
+   .page-wrapper,
+   .hero-banner div {
+     width: 90%;
+   }
+
+
+
+
+   #contactDetail {
+
+     display: grid;
+     justify-content: space-between;
+     margin-top: 50px;
+     grid-template-rows: auto auto auto;
+     grid-template-columns: 1fr 1fr;
+     grid-template-areas:
+       "phoneNumber emailAddress"
+       "gitHub LinkedIn"
+       "spotify"
+   }
+ }
+
+ /* Medium devices */
+ @media only screen and (min-width: 768px) {
+
+   .page-wrapper,
+   .hero-banner div {
+     width: 90%;
+   }
+
+
+
+   #contactDetail {
+
+     display: grid;
+     justify-content: space-between;
+     margin-top: 50px;
+     grid-template-rows: 1fr 1fr;
+     grid-template-columns: 50% 50%;
+     grid-template-areas:
+       "phoneNumber emailAddress"
+       "gitHub LinkedIn"
+       "spotify"
+   }
+
+   #phoneNumber {
+     grid-column-start: 1;
+     grid-column-end: 1;
+     grid-row-start: 1;
+     grid-row-end: 1;
+   }
+
+   #emailAddress {
+     grid-column-start: 2;
+     grid-column-end: 2;
+     grid-row-start: 1;
+     grid-row-end: 1;
+   }
+
+   #gitHub {
+     grid-column-start: 3;
+     grid-column-end: 3;
+     grid-row-start: 1;
+     grid-row-end: 1;
+   }
+
+
+   #LinkedIn {
+     grid-column-start: 1;
+     grid-column-end: 1;
+     grid-row-start: 2;
+     grid-row-end: 2;
+   }
+
+
+   #spotify {
+     grid-column-start: 2;
+     grid-column-end: 2;
+     grid-row-start: 2;
+     grid-row-end: 2;
+   }
+
+
+ }
+
+ /* Large devices */
+ @media only screen and (min-width: 992px) {
+
+   .page-wrapper,
+   .hero-banner div {
+     width: 80%;
+   }
+
+   #contactDetail {
+
+     display: grid;
+     justify-content: space-between;
+     margin-top: 50px;
+     grid-template-rows: 1fr 1fr;
+     grid-template-columns: 33.33% 33.33% 33.33%;
+     grid-template-areas:
+       "phoneNumber emailAddress gitHub"
+       "LinkedIn spotify"
+   }
+
+   #phoneNumber {
+     grid-column-start: 1;
+     grid-column-end: 1;
+     grid-row-start: 1;
+     grid-row-end: 1;
+   }
+
+   #emailAddress {
+     grid-column-start: 2;
+     grid-column-end: 2;
+     grid-row-start: 1;
+     grid-row-end: 1;
+   }
+
+   #gitHub {
+     grid-column-start: 3;
+     grid-column-end: 3;
+     grid-row-start: 1;
+     grid-row-end: 1;
+   }
+
+
+   #LinkedIn {
+     grid-column-start: 1;
+     grid-column-end: 1;
+     grid-row-start: 2;
+     grid-row-end: 2;
+   }
+
+
+   #spotify {
+     grid-column-start: 2;
+     grid-column-end: 2;
+     grid-row-start: 2;
+     grid-row-end: 2;
+   }
+
+
+
+ }
+
+ /* Extra large devices */
+ @media only screen and (min-width: 1200px) {
+
+   .page-wrapper,
+   .hero-banner div {
+     width: 75%;
+   }
+
+   #contactDetail {
+
+     display: grid;
+     justify-content: space-between;
+     margin-top: 20px;
+     grid-template-rows: 1fr;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     grid-template-areas:
+       "phoneNumber emailAddress gitHub LinkedIn spotify"
+   }
+
+   #phoneNumber {
+     grid-area: phoneNumber;
+   }
+
+   #emailAddress {
+     grid-area: emailAddress;
+   }
+
+   #gitHub {
+     grid-area: gitHub;
+   }
+
+
+   #LinkedIn {
+     grid-area: LinkedIn;
+   }
+
+
+   #spotify {
+     grid-area: spotify;
+   }
+
+
+
+ }
