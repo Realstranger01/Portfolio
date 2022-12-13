@@ -1,15 +1,11 @@
 # MY Portfolio
 
-<h1 align="center">
-  <img src=![My Portfolio](./Assets/images/rs-portfolio-logo.png) "My Portfolio") alt="RS Portfolio" width="450">
-</h1>
-
 <h3 align="center">Welcome To My Portfolio</h3>
 <h1 align="center">UNDER CONSTRUCTION</h1>
 
 ## Getting Started:
 
-Simply open up the deployed link [Portfolio link](https:https://realstranger01.github.io/Portfolio/)and explore the website:
+Simply open up the deployed link [Portfolio link](https:https://realstranger01.github.io/Portfolio/) and explore the website:
 
 ![My Portfolio](./Assets/images/screenshot%20portfolio.png) "My Portfolio")
 
