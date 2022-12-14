@@ -5,7 +5,7 @@
 
 ## Getting Started:
 
-Simply open up the deployed link [Portfolio link](https:https://realstranger01.github.io/Portfolio/) and explore the website:
+Simply open up the deployed link [Portfolio link](https://realstranger01.github.io/Portfolio/) and explore the website:
 
 ![My Portfolio](./Assets/images/screenshot%20portfolio.png) "My Portfolio")
 
